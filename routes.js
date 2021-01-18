@@ -13,6 +13,14 @@ module.exports = function (app, myDBMap) {
         return res.json({ error: error.message })
       }
     });
+  app.route('/api/exercise/users')
+    .get(async (req, res) => {
+      try {
+
+      } catch (error) {
+        return res.json({ error: error.message })
+      }
+    });
   app.route('/api/exercise/new-user')
     .post(async (req, res) => {
       try {
